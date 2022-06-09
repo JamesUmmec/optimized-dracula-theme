@@ -25,9 +25,13 @@ Support status of the languages are listed as follows.
 | go       |   ✔   |     ---     |    ✔    | `golang.go`           |
 | ts/js    |   ✔   |      ✔      |    ✔    | ---                   |
 | rust     |  ❌   |     ❌      |   ❌    | ---                   |
+| c/cpp    |  ❌   |     ❌      |   ❌    | ---                   |
+| c#       |  ❌   |     ❌      |   ❌    | ---                   |
 | python   |  ❌   |     ❌      |   ❌    | ---                   |
+| java     |  ❌   |     ❌      |   ❌    | ---                   |
 | html     |   ✔   |     ---     |   ---   | ---                   |
 | vue      |   ✔   |     ---     |   ---   | ---                   |
+| react    |  ❌   |     ---     |   ❌    | ---                   |
 | css      |   ✔   |     ---     |   ---   | ---                   |
 | scss     |   ✔   |     ---     |    ✔    | ---                   |
 | less     |   ✔   |     ---     |    ✔    | ---                   |
