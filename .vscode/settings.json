@@ -2,6 +2,7 @@
   // File encoding and eol settings.
   "files.encoding": "utf8",
   "files.eol": "\n",
+  "editor.tabSize": 2,
 
   // Prettier code formatter settings for this repo.
   "editor.formatOnSave": true,
@@ -12,6 +13,8 @@
   "cSpell.useGitignore": true,
   "cSpell.words": [
     "goland",
+    "gruvbox",
+    "harty",
     "iosevka",
     "jamesummex",
     "metaboard",

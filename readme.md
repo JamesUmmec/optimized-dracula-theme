@@ -50,12 +50,52 @@ Support status of the languages are listed as follows.
 > please notice the developer on
 > [Github Issues](https://github.com/JamesUmmec/optimized-dracula-theme/issues).
 
-## Font family recommendations.
+## Related recommendations.
+
+This extension only config color themes.
+The following recommendations can provide a better dev experience
+along with this color theme.
+
+### Font family recommendations.
 
 This extension uses [Iosevka](https://typeof.net/Iosevka/)
 as the default font face for debug.
 CJK users can consider [Sarasa Mono](https://picaq.github.io/sarasa/),
 which is based on [Iosevka](https://typeof.net/Iosevka/).
+
+### Icon theme recommendations.
+
+`JonathanHarty.gruvbox-material-icon-theme`.
+
+### Config recommendations.
+
+You can add those code into your `.vscode/settings.json` file.
+
+```jsonc
+{
+  // Workbench basic configs.
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "editor.bracketPairColorization.enabled": false,
+
+  // Font size configs.
+  "editor.lineHeight": 1.5,
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+
+  // Minimap configs.
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.scale": 2,
+  "editor.minimap.size": "proportional",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+
+  // workbench display configuration
+  "workbench.tree.indent": 18,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.expandMode": "doubleClick"
+}
+```
 
 ## Build script and CJK support (developer).
 
