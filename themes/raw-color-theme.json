@@ -61,6 +61,13 @@
     "parameter.label": {
       "foreground": "#81a7a9",
       "fontStyle": "italic"
+    },
+
+    // Variables and readonly variables.
+    "variable": "#c0bbbb",
+    "variable.readonly": {
+      "foreground": "#56aecb",
+      "fontStyle": "bold"
     }
   },
 
@@ -112,7 +119,12 @@
         "constant.language.boolean.yaml",
         "keyword",
         "punctuation.terminator.dart",
-        "storage.modifier.dart"
+        "storage.modifier.dart",
+        "storage.type.class.ts",
+        "storage.type.function.ts",
+        "storage.type.ts",
+        "variable.language.super.ts",
+        "variable.language.this.ts"
       ],
       "settings": {
         "foreground": "#dd824d"
@@ -133,7 +145,8 @@
         "entity.name.type.go",
         "entity.name.type.receiver.go",
         "storage.type",
-        "support.class.dart"
+        "support.class.dart",
+        "support.type.primitive.ts"
       ],
       "settings": {
         "foreground": "#dbab68"
@@ -180,6 +193,7 @@
         "string.interpolated",
         "string.quoted.double",
         "string.quoted.single",
+        "string.template.ts",
         "string.unquoted"
       ],
       "settings": {
@@ -199,7 +213,7 @@
       "name": "numbers",
       "scope": ["constant.numeric"],
       "settings": {
-        "foreground": "#5aafc9"
+        "foreground": "#419cd5"
       }
     },
 
@@ -215,6 +229,8 @@
         "markup.heading.markdown",
         "punctuation.definition.list.begin.markdown",
         "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
         "support.type.property-name.json",
         "variable.other.source.dart"
       ],
