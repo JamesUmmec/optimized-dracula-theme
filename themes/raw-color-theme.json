@@ -9,7 +9,7 @@
   // Appearance color configs.
   "colors": {
     "statusBar.background": "#3b4b51",
-    "statusBar.noFolderBackground": "#623e74",
+    "statusBar.noFolderBackground": "#3f274b",
     "statusBar.debuggingBackground": "#5d4343"
   },
 
@@ -133,6 +133,7 @@
         "storage.type.class",
         "storage.type.function",
         "storage.type.namespace",
+        "storage.type.ts",
         "storage.type",
         "variable.language.dart",
         "variable.language.super",
