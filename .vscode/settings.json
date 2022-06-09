@@ -10,5 +10,5 @@
 
   // Spell checker ext config, see ./extensions.json.
   "cSpell.useGitignore": true,
-  "cSpell.words": ["iosevka", "metaboard", "ummex"]
+  "cSpell.words": ["iosevka", "jamesummex", "metaboard", "ummex"]
 }
