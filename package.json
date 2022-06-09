@@ -1,7 +1,7 @@
 {
   "name": "optimized-dracula-theme",
   "displayName": "Optimized Dracula Theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An optimized dracula color theme extension for vscode.",
   "icon": "favicon.ico",
   "publisher": "jamesummex",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "build.cjk": "ts-node build-cjk.ts",
-    "build.vsix": "vsce package"
+    "build.vsix": "npm run build.cjk && vsce package"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
