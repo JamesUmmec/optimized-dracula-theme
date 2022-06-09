@@ -134,6 +134,7 @@
         "storage.type.function",
         "storage.type.namespace",
         "storage.type",
+        "variable.language.dart",
         "variable.language.super",
         "variable.language.this"
       ],
