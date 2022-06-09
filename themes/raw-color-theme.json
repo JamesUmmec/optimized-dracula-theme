@@ -203,7 +203,7 @@
     // Annotations usually with @ as its prefix.
     {
       "name": "storage type annotations.",
-      "scope": ["storage.type.annotation.dart"],
+      "scope": ["storage.type.annotation.dart", "storage.type.class.jsdoc"],
       "settings": {
         "foreground": "#bccb99",
         "fontStyle": "italic"
@@ -257,6 +257,8 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         "support.type.property-name.json",
+        "variable.other.description.jsdoc",
+        "variable.other.jsdoc",
         "variable.other.source.dart"
       ],
       "settings": {
@@ -306,8 +308,10 @@
         "fontStyle": "italic underline"
       }
     },
+
+    // Decorations of non-main part of a link.
     {
-      "name": "markdown links other",
+      "name": "vice link decorations",
       "scope": [
         "punctuation.definition.link.title.begin.markdown",
         "punctuation.definition.link.title.end.markdown",

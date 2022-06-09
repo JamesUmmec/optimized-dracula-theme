@@ -23,7 +23,7 @@ Support status of the languages are listed as follows.
 | ----- | :---: | :---------: | :-----: | --------------------- |
 | dart  |   ✔   |      ✔      |    ✔    | `Dart-Code.dart-code` |
 | go    |   ✔   |     ❌      |    ✔    | `golang.go`           |
-| ts/js |   ✔   |     ❌      |    ✔    | ---                   |
+| ts/js |   ✔   |      ✔      |    ✔    | ---                   |
 | html  |  ❌   |     ❌      |   ❌    | ---                   |
 | vue   |  ❌   |     ❌      |   ❌    | ---                   |
 | css   |  ❌   |     ❌      |   ❌    | ---                   |
