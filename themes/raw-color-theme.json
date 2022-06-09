@@ -63,9 +63,13 @@
       "fontStyle": "italic"
     },
 
-    // Variables and readonly variables.
+    // Variables and readonly definitions.
     "variable": "#c0bbbb",
     "variable.readonly": {
+      "foreground": "#56aecb",
+      "fontStyle": "bold"
+    },
+    "property.readonly": {
       "foreground": "#56aecb",
       "fontStyle": "bold"
     }
@@ -119,7 +123,7 @@
         "constant.language.boolean.yaml",
         "keyword",
         "punctuation.terminator.dart",
-        "storage.modifier.dart",
+        "storage.modifier",
         "storage.type.class",
         "storage.type.function",
         "storage.type",
