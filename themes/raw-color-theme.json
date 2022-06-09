@@ -188,7 +188,7 @@
       "scope": [
         "entity.name.function",
         "entity.other.attribute-name.class.css",
-        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.id",
         "meta.at-rule.extend.scss",
         "support.function.go"
       ],
@@ -198,7 +198,13 @@
     },
     {
       "name": "css classes",
-      "scope": ["entity.other.attribute-name.class.css"],
+      "scope": [
+        "entity.name.tag.html",
+        "entity.name.tag.script.html.vue",
+        "entity.name.tag.style.html.vue",
+        "entity.name.tag.template.html.vue",
+        "entity.other.attribute-name.class.css"
+      ],
       "settings": {
         "foreground": "#e4c769",
         "fontStyle": "italic"
@@ -218,11 +224,12 @@
       "name": "storage type annotations.",
       "scope": [
         "constant.other.color.rgb-value.hex.css",
+        "constant.other.rgb-value.css",
         "storage.type.annotation.dart",
         "storage.type.class.jsdoc"
       ],
       "settings": {
-        "foreground": "#a9b688",
+        "foreground": "#a6ba74",
         "fontStyle": "italic"
       }
     },
@@ -254,7 +261,7 @@
 
     {
       "name": "scss and less variables",
-      "scope": ["variable.scss"],
+      "scope": ["variable.scss", "variable.other.less"],
       "settings": {
         "foreground": "#56aecb"
       }
@@ -276,6 +283,7 @@
       "scope": [
         "constant.other.placeholder.go",
         "entity.name.tag.yaml",
+        "entity.other.attribute-name.html",
         "keyword.other.definition.ini",
         "markup.heading.markdown",
         "punctuation.definition.list.begin.markdown",

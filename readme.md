@@ -19,19 +19,22 @@ Some of the languages or frameworks requires some extensions for code parsing.
 Without those extensions, the code highlighting theme will not work normally.
 Support status of the languages are listed as follows.
 
-| lang  | basic | comment doc | special | require extension     |
-| ----- | :---: | :---------: | :-----: | --------------------- |
-| dart  |   ✔   |      ✔      |    ✔    | `Dart-Code.dart-code` |
-| go    |   ✔   |     ---     |    ✔    | `golang.go`           |
-| ts/js |   ✔   |      ✔      |    ✔    | ---                   |
-| html  |  ❌   |     ❌      |   ❌    | ---                   |
-| vue   |  ❌   |     ❌      |   ❌    | ---                   |
-| css   |   ✔   |     ---     |   ❌    | ---                   |
-| scss  |   ✔   |     ---     |    ✔    | ---                   |
-| less  |  ❌   |     ❌      |   ❌    | ---                   |
-| json  |   ✔   |     ---     |   ---   | ---                   |
-| jsonc |   ✔   |     ---     |   ---   | ---                   |
-| yaml  |   ✔   |     ---     |   ---   | ---                   |
+| lang     | basic | comment doc | special | require extension     |
+| -------- | :---: | :---------: | :-----: | --------------------- |
+| dart     |   ✔   |      ✔      |    ✔    | `Dart-Code.dart-code` |
+| go       |   ✔   |     ---     |    ✔    | `golang.go`           |
+| ts/js    |   ✔   |      ✔      |    ✔    | ---                   |
+| rust     |  ❌   |     ❌      |   ❌    | ---                   |
+| python   |  ❌   |     ❌      |   ❌    | ---                   |
+| html     |   ✔   |     ---     |   ---   | ---                   |
+| vue      |   ✔   |     ---     |   ---   | ---                   |
+| css      |   ✔   |     ---     |   ---   | ---                   |
+| scss     |   ✔   |     ---     |    ✔    | ---                   |
+| less     |   ✔   |     ---     |    ✔    | ---                   |
+| json     |   ✔   |     ---     |   ---   | ---                   |
+| jsonc    |   ✔   |     ---     |   ---   | ---                   |
+| yaml     |   ✔   |     ---     |   ---   | ---                   |
+| markdown |   ✔   |     ---     |    ✔    | ---                   |
 
 - `basic` means basic keywords, class/type, method/function highlighting.
 - `comment doc` means highlighting of variables in documentation comment.
