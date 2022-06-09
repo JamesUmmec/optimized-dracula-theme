@@ -15,8 +15,5 @@ pnpm-lock.yaml
 # Repo editor configurations.
 .vscode
 
-# Ignore sketches files about the icon design.
-sketches
-
 # Build script files
 build-cjk.ts

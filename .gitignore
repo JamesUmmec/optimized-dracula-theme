@@ -5,9 +5,6 @@
 node_modules
 pnpm-lock.yaml
 
-# Ignore sketches files about the icon design.
-sketches
-
 # This color theme is managed by scripts rather than developers.
 # 
 # This color theme extension is available only after running the build scripts.
