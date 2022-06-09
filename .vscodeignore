@@ -1,0 +1,15 @@
+# Dependencies management about the build script
+# rather than necessary json config codes.
+node_modules
+pnpm-lock.yaml
+
+# Ignore and attributes config files for git,
+# which is not necessary for vscode ext.
+.gitattributes
+.gitignore
+
+# Ignore sketches files about the icon design.
+sketches
+
+# Build script files
+build-cjk.ts

@@ -1,0 +1,15 @@
+# Dependencies management.
+# 
+# Current extension does not require any dependencies.
+# Those dependencies are required by the building scripts.
+node_modules
+pnpm-lock.yaml
+
+# Ignore sketches files about the icon design.
+sketches
+
+# This color theme is managed by scripts rather than developers.
+# 
+# This color theme extension is available only after running the build scripts.
+# See ./themes/cjk-color-theme.json and ./build.ts for more details.
+themes/cjk-color-theme.json

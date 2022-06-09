@@ -1,0 +1,281 @@
+// This is the raw version of the color theme.
+//
+// Here is also another special version for CJK comments,
+// at ./cjk-color-theme.json, which is managed by scripts
+// at ../build-cjk.ts.
+//
+// The only differences is that the comment is not italic.
+{
+  // Appearance color configs.
+  "colors": {
+    "statusBar.background": "#3b4b51",
+    "statusBar.noFolderBackground": "#623e74",
+    "statusBar.debuggingBackground": "#5d4343"
+  },
+
+  // Sematic color configs.
+  //
+  // Those codes will be rendered after the code parsed.
+  // Those configs are usually for variables highlighting in comments.
+  //
+  // Principle: use as less sematic highlight as possible.
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    // Keywords (necessary for dart super())
+    "keyword": "#dd824d",
+
+    // Classes and types.
+    "class": "#dbab68",
+    "type": "#dbab68",
+
+    // Judgement on method or function.
+    "method": {
+      "foreground": "#e4c769",
+      "fontStyle": "italic"
+    },
+    "function": {
+      "foreground": "#e4c769",
+      "fontStyle": "bold"
+    },
+    "method.static": {
+      "fontStyle": "italic bold"
+    },
+
+    // Annotation properties (@something), see "storage type annotations".
+    "property.annotation": "#bccb99",
+
+    // Highlight inner string interpolations.
+    "source.interpolation": {
+      "foreground": "#a973be",
+      "fontStyle": "bold"
+    },
+
+    // Normal property color declaration.
+    "property": "#c0bbbb",
+    // Make static or const properties of a class italic.
+    "property.static": {
+      "fontStyle": "italic"
+    },
+
+    // Parameters italic and gray.
+    "parameter.label": {
+      "foreground": "#81a7a9",
+      "fontStyle": "italic"
+    }
+  },
+
+  // Token color configs.
+  //
+  // => open command panel (hotkey): "Control/Command + Shift + P"
+  // => input and select: "Developer: Inspect Editor Tokens and Scopes"
+  // and then place cursor into the codes to see their scopes.
+  //
+  // Principle:
+  // 1. There're extends of scopes,
+  //    so try to use as less settings as possible.
+  // 2. Different language has different situations,
+  //    try add annotations about languages.
+  "tokenColors": [
+    // Raw comments are italic.
+    //
+    // As CJK chars are not comfortable in italic mode,
+    // When building for CJK, the fontStyle here will not be "italic".
+    {
+      // ATTENTION!
+      //
+      // The value of "name" here will be used in the building script.
+      // Check the building script at ../build-cjk.ts before editing.
+      "name": "normal comments",
+      "scope": ["comment.block", "comment.line"],
+      "settings": {
+        "foreground": "#6f7b7d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "documentation comments",
+      "scope": "comment.block.documentation",
+      "settings": {
+        "foreground": "#51935b"
+      }
+    },
+
+    // Keywords in orange color.
+    //
+    // [dart] it's not necessary to highlight
+    // imports and exports from keywords.
+    {
+      "name": "keywords and semicolons",
+      "scope": [
+        "constant.character.escape",
+        "constant.language",
+        "constant.language.boolean.yaml",
+        "keyword",
+        "punctuation.terminator.dart",
+        "storage.modifier.dart"
+      ],
+      "settings": {
+        "foreground": "#dd824d"
+      }
+    },
+    {
+      "name": "semicolon bold decoration",
+      "scope": "punctuation.terminator.dart",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+
+    // Classes
+    {
+      "name": "classes and types",
+      "scope": [
+        "entity.name.type.go",
+        "entity.name.type.receiver.go",
+        "storage.type",
+        "support.class.dart"
+      ],
+      "settings": {
+        "foreground": "#dbab68"
+      }
+    },
+
+    // Functions and methods.
+    //
+    // [dart] judgement on function or method is only available
+    // in sematic highlighting in dart language.
+    {
+      "name": "functions and methods",
+      "scope": ["entity.name.function", "support.function.go"],
+      "settings": {
+        "foreground": "#e4c769"
+      }
+    },
+
+    // Golang properties of certain types, and the receiver.
+    {
+      "name": "golang properties of types",
+      "scope": ["variable.other.field.go", "variable.other.receiver.go"],
+      "settings": {
+        "foreground": "#c0bbbb",
+        "fontStyle": "italic"
+      }
+    },
+
+    // Annotations usually with @ as its prefix.
+    {
+      "name": "storage type annotations.",
+      "scope": ["storage.type.annotation.dart"],
+      "settings": {
+        "foreground": "#bccb99",
+        "fontStyle": "italic"
+      }
+    },
+
+    // Strings, in codes and in config files.
+    {
+      "name": "strings",
+      "scope": [
+        "markup.quote.markdown",
+        "string.interpolated",
+        "string.quoted.double",
+        "string.quoted.single",
+        "string.unquoted"
+      ],
+      "settings": {
+        "foreground": "#6da228"
+      }
+    },
+
+    {
+      "name": "operators",
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#88cac8"
+      }
+    },
+
+    {
+      "name": "numbers",
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#5aafc9"
+      }
+    },
+
+    // 1. Codes in doc comments.
+    // 2. Keys in config files. (json, yaml, ect.)
+    // 3. Headings in markdowns.
+    {
+      "name": "special variables and key words.",
+      "scope": [
+        "constant.other.placeholder.go",
+        "entity.name.tag.yaml",
+        "keyword.other.definition.ini",
+        "markup.heading.markdown",
+        "punctuation.definition.list.begin.markdown",
+        "punctuation.definition.quote.begin.markdown",
+        "support.type.property-name.json",
+        "variable.other.source.dart"
+      ],
+      "settings": {
+        "foreground": "#a973be"
+      }
+    },
+
+    // Markdown source code configs.
+    {
+      "name": "markdown bold",
+      "scope": "markup.bold.markdown",
+      "settings": {
+        "foreground": "#32a6d4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "markdown italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "#4bc8bc",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "markdown inline codes",
+      "scope": "markup.inline.raw.string.markdown",
+      "settings": {
+        "foreground": "#d5b66c"
+      }
+    },
+
+    // Markdown links.
+    {
+      "name": "markdown links title",
+      "scope": ["string.other.link.title.markdown"],
+      "settings": {
+        "foreground": "#398edd",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "markdown links path",
+      "scope": ["meta.link.inline.markdown"],
+      "settings": {
+        "foreground": "#798386",
+        "fontStyle": "italic underline"
+      }
+    },
+    {
+      "name": "markdown links other",
+      "scope": [
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.metadata.markdown"
+      ],
+      "settings": {
+        "foreground": "#798386",
+        "fontStyle": ""
+      }
+    }
+  ]
+}

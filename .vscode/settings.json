@@ -1,0 +1,14 @@
+{
+  // File encoding and eol settings.
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  // Prettier code formatter settings for this repo.
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.ignorePath": ".prettierignore",
+
+  // Spell checker ext config, see ./extensions.json.
+  "cSpell.useGitignore": true,
+  "cSpell.words": ["iosevka", "metaboard", "ummex"]
+}

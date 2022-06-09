@@ -1,0 +1,6 @@
+# Dependencies management for the build script.
+node_modules
+pnpm-lock.yaml
+
+# Sketches folder.
+sketches

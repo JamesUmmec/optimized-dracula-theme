@@ -1,0 +1,41 @@
+{
+  "name": "optimized-dracula-theme",
+  "version": "1.0.0",
+  "description": "An optimized dracula color theme.",
+  "icon": "https://github.com/JamesUmmec/imagebed/blob/main/images/20220609135035.png?raw=true",
+  "publisher": "JamesUmmex",
+  "author": {
+    "name": "JamesUmmex",
+    "email": "dreamingboat@outlook.com"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Optimized Dracula Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/raw-color-theme.json"
+      },
+      {
+        "label": "Optimized Dracula Theme (CJK)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cjk-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build.cjk": "ts-node build-cjk.ts"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^17.0.41",
+    "fs-extra": "^10.1.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
