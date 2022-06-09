@@ -13,6 +13,8 @@ but once it supports a language,
 this color theme will help you to be more comfortable and productive.
 The project is still under development.
 
+![](https://github.com/JamesUmmec/imagebed/blob/main/images/20220609205328.png?raw=true)
+
 Here are two color themes:
 `Optimized Dracula Theme` and `Optimized Dracula Theme (CJK)`.
 If you'd like to use CJK languages in your comments,
