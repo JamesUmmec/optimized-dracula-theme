@@ -120,11 +120,11 @@
         "keyword",
         "punctuation.terminator.dart",
         "storage.modifier.dart",
-        "storage.type.class.ts",
-        "storage.type.function.ts",
-        "storage.type.ts",
-        "variable.language.super.ts",
-        "variable.language.this.ts"
+        "storage.type.class",
+        "storage.type.function",
+        "storage.type",
+        "variable.language.super",
+        "variable.language.this"
       ],
       "settings": {
         "foreground": "#dd824d"
@@ -146,7 +146,7 @@
         "entity.name.type.receiver.go",
         "storage.type",
         "support.class.dart",
-        "support.type.primitive.ts"
+        "support.type.primitive"
       ],
       "settings": {
         "foreground": "#dbab68"
@@ -193,7 +193,7 @@
         "string.interpolated",
         "string.quoted.double",
         "string.quoted.single",
-        "string.template.ts",
+        "string.template",
         "string.unquoted"
       ],
       "settings": {
@@ -229,8 +229,8 @@
         "markup.heading.markdown",
         "punctuation.definition.list.begin.markdown",
         "punctuation.definition.quote.begin.markdown",
-        "punctuation.definition.template-expression.begin.ts",
-        "punctuation.definition.template-expression.end.ts",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
         "support.type.property-name.json",
         "variable.other.source.dart"
       ],
