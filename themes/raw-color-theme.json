@@ -72,6 +72,12 @@
     "property.readonly": {
       "foreground": "#56aecb",
       "fontStyle": "bold"
+    },
+
+    // Default library variables and namespaces.
+    "variable.defaultLibrary": {
+      "foreground": "#a973be",
+      "fontStyle": "bold"
     }
   },
 
@@ -126,6 +132,7 @@
         "storage.modifier",
         "storage.type.class",
         "storage.type.function",
+        "storage.type.namespace",
         "storage.type",
         "variable.language.super",
         "variable.language.this"
@@ -135,8 +142,13 @@
       }
     },
     {
-      "name": "semicolon bold decoration",
-      "scope": "punctuation.terminator.dart",
+      "name": "semicolon and node modules",
+      "scope": [
+        "punctuation.terminator.dart",
+        "keyword.control.export",
+        "keyword.control.import",
+        "storage.type.namespace"
+      ],
       "settings": {
         "fontStyle": "bold"
       }
@@ -150,10 +162,19 @@
         "entity.name.type.receiver.go",
         "storage.type",
         "support.class.dart",
-        "support.type.primitive"
+        "support.type.primitive",
+        "entity.name.type.module.ts"
       ],
       "settings": {
         "foreground": "#dbab68"
+      }
+    },
+    {
+      "name": "module and namespace",
+      "scope": ["entity.name.type.module.ts"],
+      "settings": {
+        "foreground": "#dbab68",
+        "fontStyle": "italic"
       }
     },
 
