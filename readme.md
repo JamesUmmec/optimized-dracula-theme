@@ -11,23 +11,42 @@ This color theme extension is aimed to provide a better dev experience.
 It cannot support all those commonly used languages,
 but once it supports a language,
 this color theme will help you to be more comfortable and productive.
+The project is still under development.
 
 ## Supported languages and frameworks.
 
 Some of the languages or frameworks requires some extensions for code parsing.
 Without those extensions, the code highlighting theme will not work normally.
+Support status of the languages are listed as follows.
 
-- `dart/flutter` (extension required: `Dart-Code.dart-code` and `Dart-Code.flutter`)
-- `golang`, including `go.mod`, `go.sum` and `go.work`.
-- `json`, including `jsonc` (Json with comments).
-- `yaml`
-- Git config files including `.gitignore` and `.gitattributes`.
-- `.prettierignore` config files.
+| lang  | basic | comment doc | special | require extension     |
+| ----- | :---: | :---------: | :-----: | --------------------- |
+| dart  |   ✔   |      ✔      |    ✔    | `Dart-Code.dart-code` |
+| go    |   ✔   |     ❌      |    ✔    | `golang.go`           |
+| ts/js |   ✔   |     ❌      |    ✔    | ---                   |
+| html  |  ❌   |     ❌      |   ❌    | ---                   |
+| vue   |  ❌   |     ❌      |   ❌    | ---                   |
+| css   |  ❌   |     ❌      |   ❌    | ---                   |
+| scss  |  ❌   |     ❌      |   ❌    | ---                   |
+| less  |  ❌   |     ❌      |   ❌    | ---                   |
+| json  |   ✔   |     ---     |   ---   | ---                   |
+| jsonc |   ✔   |     ---     |   ---   | ---                   |
+| yaml  |   ✔   |     ---     |   ---   | ---                   |
+
+- `basic` means basic keywords, class/type, method/function highlighting.
+- `comment doc` means highlighting of variables in documentation comment.
+- `special` means special optimization for the language,
+  such as readonly variables in `ts`/`js`,
+  namespace in `ts`, and property names in `dart`.
+- `required extension` means the highlighting might not be normal
+  without those extensions.
 
 ## Font family recommendations.
 
-This extension uses [iosevka](https://typeof.net/Iosevka/)
+This extension uses [Iosevka](https://typeof.net/Iosevka/)
 as the default font face for debug.
+CJK users can consider [Sarasa Mono](https://picaq.github.io/sarasa/),
+which is based on [Iosevka](https://typeof.net/Iosevka/).
 
 ## Build script and CJK support (developer).
 
