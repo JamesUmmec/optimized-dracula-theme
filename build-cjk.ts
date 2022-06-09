@@ -1,13 +1,11 @@
 import {resolve} from "node:path"
 import {readFileSync, writeFileSync} from "fs-extra"
 
-/** Raw file for non CJK languages. */
+// Path of input and output.
 const rawPath = resolve(__dirname, "./themes/raw-color-theme.json")
-
-/** File of the CJK version of this color theme. */
 const cjkPath = resolve(__dirname, "./themes/cjk-color-theme.json")
 
-/** Comment removed JSON object from {@link rawPath} file. */
+// Remove comments of jsonc and parse pure json.
 const raw = JSON.parse(
   readFileSync(rawPath)
     .toString()
@@ -15,11 +13,8 @@ const raw = JSON.parse(
     .replace(/\/\/.*/g, "")
 )
 
-/** Content under key `"tokenColors"`, and type it as an array. */
+// Set necessary properties.
 const tokenColors = raw["tokenColors"] as []
-
-// Edit `tokenColors[<?>].settings.fontStyle` to
-// cancel italic decoration for CJK version.
 for (const tokenColor of tokenColors) {
   if (tokenColor["name"] === "normal comments") {
     // @ts-ignore
@@ -28,15 +23,13 @@ for (const tokenColor of tokenColors) {
   }
 }
 
-// Set the value before writing into aimed file.
+// Add comments at the beginning of output file.
 raw["tokenColors"] = tokenColors
-
-// Add comment into CJK version theme json file.
 const withComment =
   "// CJK version of the color theme.\n" +
   "// See comments in ./raw-color-theme.json for more details.\n" +
   JSON.stringify(raw)
 
-// Write into aimed file.
+// Write into output file and log success.
 writeFileSync(cjkPath, withComment)
 console.log("[v] successfully publish into theme/cjk-color-theme.json")
