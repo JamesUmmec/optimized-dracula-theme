@@ -339,7 +339,7 @@
     },
     {
       "name": "markdown links path",
-      "scope": ["meta.link.inline.markdown"],
+      "scope": ["meta.image.inline.markdown", "meta.link.inline.markdown"],
       "settings": {
         "foreground": "#798386",
         "fontStyle": "italic underline"
@@ -350,6 +350,8 @@
     {
       "name": "vice link decorations",
       "scope": [
+        "punctuation.definition.link.description.begin.markdown",
+        "punctuation.definition.link.description.end.markdown",
         "punctuation.definition.link.title.begin.markdown",
         "punctuation.definition.link.title.end.markdown",
         "punctuation.definition.metadata.markdown"
