@@ -1,7 +1,7 @@
 {
   "name": "optimized-dracula-theme",
   "displayName": "Optimized Dracula Theme",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "An optimized dracula color theme extension for vscode.",
   "icon": "favicon.ico",
   "publisher": "jamesummex",
