@@ -8,6 +8,13 @@ pnpm-lock.yaml
 .gitattributes
 .gitignore
 
+# Prettier configurations.
+.prettierignore
+.prettierrc.yaml
+
+# Repo editor configurations.
+.vscode
+
 # Ignore sketches files about the icon design.
 sketches
 
