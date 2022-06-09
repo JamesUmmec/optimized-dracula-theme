@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "An optimized dracula color theme.",
   "icon": "https://github.com/JamesUmmec/imagebed/blob/main/images/20220609135035.png?raw=true",
-  "publisher": "JamesUmmex",
   "author": {
     "name": "JamesUmmex",
     "email": "dreamingboat@outlook.com"
+  },
+  "repository": {
+    "url": "https://github.com/JamesUmmec/optimized-dracula-theme"
   },
   "engines": {
     "vscode": "^1.54.0"
