@@ -33,7 +33,7 @@
   },
   "scripts": {
     "build.cjk": "ts-node build-cjk.ts",
-    "build.vsix": "vsce publish"
+    "build.vsix": "vsce package"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
