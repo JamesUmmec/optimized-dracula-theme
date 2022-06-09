@@ -158,6 +158,7 @@
     {
       "name": "classes and types",
       "scope": [
+        "entity.name.tag.css",
         "entity.name.type.go",
         "entity.name.type.receiver.go",
         "storage.type",
@@ -171,7 +172,7 @@
     },
     {
       "name": "module and namespace",
-      "scope": ["entity.name.type.module.ts"],
+      "scope": ["entity.name.tag.css", "entity.name.type.module.ts"],
       "settings": {
         "foreground": "#dbab68",
         "fontStyle": "italic"
@@ -184,13 +185,25 @@
     // in sematic highlighting in dart language.
     {
       "name": "functions and methods",
-      "scope": ["entity.name.function", "support.function.go"],
+      "scope": [
+        "entity.name.function",
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.id.css",
+        "support.function.go"
+      ],
       "settings": {
         "foreground": "#e4c769"
       }
     },
+    {
+      "name": "css classes",
+      "scope": ["entity.other.attribute-name.class.css"],
+      "settings": {
+        "foreground": "#e4c769",
+        "fontStyle": "italic"
+      }
+    },
 
-    // Golang properties of certain types, and the receiver.
     {
       "name": "golang properties of types",
       "scope": ["variable.other.field.go", "variable.other.receiver.go"],
@@ -200,12 +213,15 @@
       }
     },
 
-    // Annotations usually with @ as its prefix.
     {
       "name": "storage type annotations.",
-      "scope": ["storage.type.annotation.dart", "storage.type.class.jsdoc"],
+      "scope": [
+        "constant.other.color.rgb-value.hex.css",
+        "storage.type.annotation.dart",
+        "storage.type.class.jsdoc"
+      ],
       "settings": {
-        "foreground": "#bccb99",
+        "foreground": "#a9b688",
         "fontStyle": "italic"
       }
     },
@@ -219,7 +235,8 @@
         "string.quoted.double",
         "string.quoted.single",
         "string.template",
-        "string.unquoted"
+        "string.unquoted",
+        "support.constant.property-value.css"
       ],
       "settings": {
         "foreground": "#6da228"
@@ -228,7 +245,7 @@
 
     {
       "name": "operators",
-      "scope": ["keyword.operator"],
+      "scope": ["keyword.operator", "keyword.other.unit"],
       "settings": {
         "foreground": "#88cac8"
       }
@@ -257,6 +274,7 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         "support.type.property-name.json",
+        "support.type.property-name.css",
         "variable.other.description.jsdoc",
         "variable.other.jsdoc",
         "variable.other.source.dart"
