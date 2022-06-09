@@ -13,6 +13,11 @@ but once it supports a language,
 this color theme will help you to be more comfortable and productive.
 The project is still under development.
 
+Here are two color themes:
+`Optimized Dracula Theme` and `Optimized Dracula Theme (CJK)`.
+If you'd like to use CJK languages in your comments,
+the CJK version of this theme is more recommended.
+
 ## Supported languages and frameworks.
 
 Some of the languages or frameworks requires some extensions for code parsing.
