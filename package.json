@@ -2,7 +2,7 @@
   "name": "optimized-dracula-theme",
   "version": "1.0.0",
   "description": "An optimized dracula color theme.",
-  "icon": "https://github.com/JamesUmmec/imagebed/blob/main/images/20220609135035.png?raw=true",
+  "icon": "./favicon.ico",
   "author": {
     "name": "JamesUmmex",
     "email": "dreamingboat@outlook.com"
