@@ -128,7 +128,7 @@
         "constant.language",
         "constant.language.boolean.yaml",
         "keyword",
-        "punctuation.terminator.dart",
+        "punctuation.terminator",
         "storage.modifier",
         "storage.type.class",
         "storage.type.function",
@@ -189,6 +189,7 @@
         "entity.name.function",
         "entity.other.attribute-name.class.css",
         "entity.other.attribute-name.id.css",
+        "meta.at-rule.extend.scss",
         "support.function.go"
       ],
       "settings": {
@@ -248,6 +249,14 @@
       "scope": ["keyword.operator", "keyword.other.unit"],
       "settings": {
         "foreground": "#88cac8"
+      }
+    },
+
+    {
+      "name": "scss and less variables",
+      "scope": ["variable.scss"],
+      "settings": {
+        "foreground": "#56aecb"
       }
     },
 

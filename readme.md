@@ -27,7 +27,7 @@ Support status of the languages are listed as follows.
 | html  |  ❌   |     ❌      |   ❌    | ---                   |
 | vue   |  ❌   |     ❌      |   ❌    | ---                   |
 | css   |   ✔   |     ---     |   ❌    | ---                   |
-| scss  |  ❌   |     ❌      |   ❌    | ---                   |
+| scss  |   ✔   |     ---     |    ✔    | ---                   |
 | less  |  ❌   |     ❌      |   ❌    | ---                   |
 | json  |   ✔   |     ---     |   ---   | ---                   |
 | jsonc |   ✔   |     ---     |   ---   | ---                   |
