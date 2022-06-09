@@ -22,7 +22,7 @@ Support status of the languages are listed as follows.
 | lang  | basic | comment doc | special | require extension     |
 | ----- | :---: | :---------: | :-----: | --------------------- |
 | dart  |   ✔   |      ✔      |    ✔    | `Dart-Code.dart-code` |
-| go    |   ✔   |     ❌      |    ✔    | `golang.go`           |
+| go    |   ✔   |     ---     |    ✔    | `golang.go`           |
 | ts/js |   ✔   |      ✔      |    ✔    | ---                   |
 | html  |  ❌   |     ❌      |   ❌    | ---                   |
 | vue   |  ❌   |     ❌      |   ❌    | ---                   |
@@ -40,6 +40,15 @@ Support status of the languages are listed as follows.
   namespace in `ts`, and property names in `dart`.
 - `required extension` means the highlighting might not be normal
   without those extensions.
+
+> Comment documentation for golang is not supported
+> by vscode `golang.go` extension yet.
+> If comment doc of golang is necessary for your project,
+> please consider [Goland](https://www.jetbrains.com/go/)
+> by [JetBrains](https://www.jetbrains.com/).
+> Or if you find an available golang comment doc extension,
+> please notice the developer on
+> [Github Issues](https://github.com/JamesUmmec/optimized-dracula-theme/issues).
 
 ## Font family recommendations.
 
