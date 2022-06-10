@@ -215,9 +215,13 @@
 
     {
       "name": "golang properties of types",
-      "scope": ["variable.other.field.go", "variable.other.receiver.go"],
+      "scope": [
+        "variable.other.field.go",
+        "variable.other.receiver.go",
+        "meta.object-literal.key"
+      ],
       "settings": {
-        "foreground": "#c0bbbb",
+        "foreground": "#c3b2b2",
         "fontStyle": "italic"
       }
     },
