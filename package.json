@@ -8,7 +8,17 @@
     "dracula",
     "dark",
     "theme",
-    "color"
+    "color",
+    "dart",
+    "flutter",
+    "golang",
+    "electron",
+    "web",
+    "vue",
+    "js",
+    "ts",
+    "scss",
+    "less"
   ],
   "icon": "favicon.ico",
   "publisher": "jamesummex",
