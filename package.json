@@ -50,7 +50,7 @@
     ]
   },
   "scripts": {
-    "build.cjk": "ts-node build-cjk.ts",
+    "build.cjk": "ts-node scripts/cjk.ts",
     "build.vsix": "npm run build.cjk && vsce package"
   },
   "devDependencies": {

@@ -16,4 +16,4 @@ pnpm-lock.yaml
 .vscode
 
 # Build script files
-build-cjk.ts
+scripts
