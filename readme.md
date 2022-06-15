@@ -29,6 +29,7 @@ Support status of the languages are listed as follows.
 | rust     |  ❌   |     ❌      |   ❌    | ---                   |
 | c/cpp    |  ❌   |     ❌      |   ❌    | ---                   |
 | c#       |  ❌   |     ❌      |   ❌    | ---                   |
+| swift    |  ❌   |     ❌      |   ❌    | ---                   |
 | python   |  ❌   |     ❌      |   ❌    | ---                   |
 | java     |  ❌   |     ❌      |   ❌    | ---                   |
 | html     |   ✔   |     ---     |   ---   | ---                   |
@@ -36,6 +37,7 @@ Support status of the languages are listed as follows.
 | react    |  ❌   |     ---     |   ❌    | ---                   |
 | css      |   ✔   |     ---     |   ---   | ---                   |
 | scss     |   ✔   |     ---     |    ✔    | ---                   |
+| sass     |  ❌   |     ---     |   ❌    | ---                   |
 | less     |   ✔   |     ---     |    ✔    | ---                   |
 | json     |   ✔   |     ---     |   ---   | ---                   |
 | jsonc    |   ✔   |     ---     |   ---   | ---                   |
