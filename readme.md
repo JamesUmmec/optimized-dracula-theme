@@ -15,11 +15,6 @@ The project is still under development.
 
 ![](https://github.com/JamesUmmec/imagebed/blob/main/images/20220609205328.png?raw=true)
 
-Here are two color themes:
-`Optimized Dracula Theme` and `Optimized Dracula Theme (CJK)`.
-If you'd like to use CJK languages in your comments,
-the CJK version of this theme is more recommended.
-
 ## Supported languages and frameworks.
 
 Some of the languages or frameworks requires some extensions for code parsing.
@@ -63,6 +58,46 @@ Support status of the languages are listed as follows.
 > Or if you find an available golang comment doc extension,
 > please notice the developer on
 > [Github Issues](https://github.com/JamesUmmec/optimized-dracula-theme/issues).
+
+## Vue template highlight configs.
+
+This color theme is originally designed for `dart`.
+It will use sematic highlighting to support comment docs in `dart`.
+But the vue extension `Vue.volar` uses another highlighting mode
+that the blank sematic highlighting will overwrite the raw highlights.
+
+If you are using `vue`, consider add this line into the
+`.vscode/settings.json` file in your workspace.
+
+```jsonc
+{
+  // Cancel sematic highlighting to highlight vue better.
+  "editor.semanticHighlighting.enabled": false
+}
+```
+
+## Cancel italic style of comments.
+
+If you do not like italic comments,
+just add those code into your `.vscode/settings.json` config file.
+
+```jsonc
+{
+  // Use workspace config to cancel comments italic style.
+  "editor.tokenColorCustomizations": {
+    "[Optimized Dracula Theme]": {
+      "textMateRules": [
+        {
+          "scope": ["comment.line", "comment.block"],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  }
+}
+```
 
 ## Related recommendations.
 
@@ -108,25 +143,5 @@ You can add those code into your `.vscode/settings.json` file.
   "workbench.tree.indent": 18,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.expandMode": "doubleClick"
-}
-```
-
-## Cancel italic style of comments
-
-If you do not like italic comments,
-just add those code into your `.vscode/settings.json` config file.
-
-```jsonc
-"editor.tokenColorCustomizations": {
-  "[Optimized Dracula Theme]": {
-    "textMateRules": [
-      {
-        "scope": ["comment.line", "comment.block"],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  }
 }
 ```

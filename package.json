@@ -41,17 +41,11 @@
         "label": "Optimized Dracula Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/raw-color-theme.json"
-      },
-      {
-        "label": "Optimized Dracula Theme (CJK)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/cjk-color-theme.json"
       }
     ]
   },
   "scripts": {
-    "build.cjk": "ts-node scripts/cjk.ts",
-    "build.vsix": "npm run build.cjk && vsce package"
+    "build.vsix": "vsce package"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
