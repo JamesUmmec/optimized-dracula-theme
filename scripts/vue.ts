@@ -1,0 +1,1 @@
+// Special configs for vue.
