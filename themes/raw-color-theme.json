@@ -216,6 +216,14 @@
     },
 
     {
+      "name": "variables in templates",
+      "scope": ["variable.other.readwrite.ts"],
+      "settings": {
+        "foreground": "#c0bbbb"
+      }
+    },
+
+    {
       "name": "properties of types",
       "scope": [
         "variable.other.field.go",
