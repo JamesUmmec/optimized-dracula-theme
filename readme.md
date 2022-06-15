@@ -32,7 +32,7 @@ Support status of the languages are listed as follows.
 | python   |  ❌   |     ❌      |   ❌    | ---                   |
 | java     |  ❌   |     ❌      |   ❌    | ---                   |
 | html     |   ✔   |     ---     |   ---   | ---                   |
-| vue      |   ✔   |     ---     |   ---   | ---                   |
+| vue      |   ✔   |      ✔      |   ❌    | `Vue.volar`           |
 | react    |  ❌   |     ---     |   ❌    | ---                   |
 | css      |   ✔   |     ---     |   ---   | ---                   |
 | scss     |   ✔   |     ---     |    ✔    | ---                   |
