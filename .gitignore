@@ -6,10 +6,8 @@ node_modules
 pnpm-lock.yaml
 
 # This color theme is managed by scripts rather than developers.
-# 
 # This color theme extension is available only after running the build scripts.
-# See ./themes/cjk-color-theme.json and ./build.ts for more details.
-themes/cjk-color-theme.json
+themes/vue-color-theme.json
 
 # Ignore output vsix file
 *.vsix
