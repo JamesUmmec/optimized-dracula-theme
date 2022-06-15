@@ -1,7 +1,7 @@
 {
   "name": "optimized-dracula-theme",
   "displayName": "Optimized Dracula Theme",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An optimized dracula color theme vscode extension to improve dart/flutter, web/electron and golang dev experience.",
   "keywords": [
     "optimized",
@@ -41,11 +41,17 @@
         "label": "Optimized Dracula Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/raw-color-theme.json"
+      },
+      {
+        "label": "Optimized Dracula Theme (vue)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vue-color-theme.json"
       }
     ]
   },
   "scripts": {
-    "build.vsix": "vsce package"
+    "build.vue": "ts-node scripts/vue.ts",
+    "build.vsix": "npm run build.vue && vsce package"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

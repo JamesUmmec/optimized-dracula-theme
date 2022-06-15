@@ -15,6 +15,10 @@ The project is still under development.
 
 ![](https://github.com/JamesUmmec/imagebed/blob/main/images/20220609205328.png?raw=true)
 
+There's a special version for `vue` development,
+if you are develop with `vue` framework,
+you can consider using `Optimized Dracula Theme (vue)`.
+
 ## Supported languages and frameworks.
 
 Some of the languages or frameworks requires some extensions for code parsing.
@@ -33,7 +37,7 @@ Support status of the languages are listed as follows.
 | python   |  ❌   |     ❌      |   ❌    | ---                   |
 | java     |  ❌   |     ❌      |   ❌    | ---                   |
 | html     |   ✔   |     ---     |   ---   | ---                   |
-| vue      |   ✔   |      ✔      |   ❌    | `Vue.volar`           |
+| vue      |   ✔   |      ✔      |    ✔    | `Vue.volar`           |
 | react    |  ❌   |     ---     |   ❌    | ---                   |
 | css      |   ✔   |     ---     |   ---   | ---                   |
 | scss     |   ✔   |     ---     |    ✔    | ---                   |
@@ -60,23 +64,6 @@ Support status of the languages are listed as follows.
 > Or if you find an available golang comment doc extension,
 > please notice the developer on
 > [Github Issues](https://github.com/JamesUmmec/optimized-dracula-theme/issues).
-
-## Vue template highlight configs.
-
-This color theme is originally designed for `dart`.
-It will use sematic highlighting to support comment docs in `dart`.
-But the vue extension `Vue.volar` uses another highlighting mode
-that the blank sematic highlighting will overwrite the raw highlights.
-
-If you are using `vue`, consider add this line into the
-`.vscode/settings.json` file in your workspace.
-
-```jsonc
-{
-  // Cancel sematic highlighting to highlight vue better.
-  "editor.semanticHighlighting.enabled": false
-}
-```
 
 ## Cancel italic style of comments.
 
