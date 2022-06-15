@@ -67,7 +67,7 @@ Support status of the languages are listed as follows.
 
 ## Cancel italic style of comments.
 
-If you do not like italic comments,
+If you do not like italic style comments,
 just add those code into your `.vscode/settings.json` config file.
 
 ```jsonc
