@@ -163,11 +163,12 @@
       "scope": [
         "entity.name.tag.css",
         "entity.name.type.go",
+        "entity.name.type.module.ts",
         "entity.name.type.receiver.go",
         "storage.type",
         "support.class.dart",
         "support.type.primitive",
-        "entity.name.type.module.ts"
+        "variable.other.object.ts"
       ],
       "settings": {
         "foreground": "#dbab68"
@@ -215,9 +216,11 @@
     },
 
     {
-      "name": "golang properties of types",
+      "name": "properties of types",
       "scope": [
         "variable.other.field.go",
+        "variable.other.property.ts",
+        "variable.other.object.property.ts",
         "variable.other.receiver.go",
         "meta.object-literal.key"
       ],
