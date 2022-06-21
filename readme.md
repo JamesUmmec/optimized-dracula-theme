@@ -134,3 +134,9 @@ You can add those code into your `.vscode/settings.json` file.
   "workbench.tree.expandMode": "doubleClick"
 }
 ```
+
+## Developers read.
+
+This repo requires `vsce` **globally** installed,
+or the npm scripts will not be available.
+See [vsce npm homepage](https://www.npmjs.com/package/vsce).

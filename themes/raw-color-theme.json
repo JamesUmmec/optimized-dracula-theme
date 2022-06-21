@@ -136,6 +136,7 @@
         "storage.type.namespace",
         "storage.type.ts",
         "storage.type",
+        "support.type.builtin.ts",
         "variable.language.dart",
         "variable.language.super",
         "variable.language.this"
@@ -163,6 +164,7 @@
       "scope": [
         "entity.name.tag.css",
         "entity.name.type.go",
+        "entity.name.type.ts",
         "entity.name.type.module.ts",
         "entity.name.type.receiver.go",
         "storage.type",
