@@ -1,7 +1,7 @@
 {
   "name": "optimized-dracula-theme",
   "displayName": "Optimized Dracula Theme",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "An optimized dracula color theme vscode extension to improve dart/flutter, web/electron and golang dev experience.",
   "keywords": [
     "optimized",
